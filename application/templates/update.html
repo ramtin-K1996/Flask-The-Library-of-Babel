@@ -1,0 +1,22 @@
+{% extends "navigationbar.html" %}
+{% block body %}
+<p>update</p>
+<p>
+    <div class='form'>
+        <form method='POST' action=''>
+            {{ form.hidden_tag() }}
+            <!-- Each field displays its label followed by the input field itself -->
+            {{ form.book.label }} {{ form.book }}
+            <br>
+            {{ form.title.label }} {{ form.title }}
+            <br>
+            {{ form.genre.label }} {{ form.genre }}
+            <br>
+            {{ form.submit }}
+            <br>
+            {{ message }}
+        </form>
+    </div>
+</p>
+
+{% endblock body %}

@@ -1,0 +1,36 @@
+{% extends "navigationbar.html" %}
+{% block body %}
+<p></p>
+
+<p>
+    <div class='form'>
+        <form method='POST' action=''>
+            {{ form.hidden_tag() }}
+            Delete by Title
+            <br>
+            <br>
+            {{ form.bookdft.label }} {{ form.bookdft}}
+            <br>
+            {{ form.submit }}
+            <br>
+            {{ message2 }}
+            <br>
+            <br>
+            <br>
+            Delete by ID
+            <br>
+            <br>
+            {{ form.bookdf.label }} {{ form.bookdf }}
+            <br>
+            {{ form.submit2 }}
+            <br>
+            {{message}}
+
+        </form>
+       
+        
+
+    </div>
+</p>
+
+{% endblock body %}

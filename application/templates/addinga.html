@@ -1,0 +1,26 @@
+
+{% extends "navigationbar.html" %}
+{% block body %}
+<html>
+    <head>
+        <p>Adding authors</p>
+    </head>
+    <body>
+        <div class='form'>
+            <form method='POST' action=''>
+                {{ form.hidden_tag() }}
+                {{ form.first_name.label }} {{ form.first_name }}
+                <br>
+                {{ form.last_name.label }} {{ form.last_name }}
+                <br>
+                {{ form.nationality.label }} {{ form.nationality }}
+                <br>
+                {{ form.submit }}
+                <br>
+            {{ message }}
+            </form>
+        </div>
+    </body>
+</html>
+
+{% endblock body %}

@@ -1,0 +1,10 @@
+{% extends "navigationbar.html" %}
+{% block body %}
+
+<P>{{authorspage_str}}</p>
+
+{% for i in authorspage.book %}
+<p>{{ i.title +"| "+ i.genre }}<br> </p>
+
+{% endfor %}
+{% endblock body %}

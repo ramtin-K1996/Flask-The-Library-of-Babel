@@ -1,0 +1,23 @@
+{% extends "navigationbar.html" %}
+{% block body %}
+
+    <h1>Add book to database:</h1>
+    <p>
+        <div class='form'>
+            <form method='POST' action=''>
+                {{ form.hidden_tag() }}
+                <!-- Each field displays its label followed by the input field itself -->
+                {{ form.title.label }} {{ form.title }}
+                <br>
+                {{ form.genre.label }} {{ form.genre }}
+                <br>
+                {{ form.author.label }} {{ form.author }}
+                <br>
+                <!-- form.submit is a button -->
+                {{ form.submit }}
+                <br>
+                {{ message }}
+            </form>
+        </div>
+    </p>
+{% endblock body %}
