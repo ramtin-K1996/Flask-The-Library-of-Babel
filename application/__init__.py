@@ -2,6 +2,7 @@ from flask import Flask, request, redirect, url_for
 from flask_sqlalchemy import SQLAlchemy
 from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField
+from flask_bootstrap import Bootstrap
 import os
 
 app = Flask(__name__)
@@ -13,6 +14,8 @@ db = SQLAlchemy(app)
 
 
 from application import routes
+bootstrap = Bootstrap(app)
+
 
 
 

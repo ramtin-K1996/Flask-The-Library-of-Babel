@@ -1,20 +1,17 @@
 {% extends "navigationbar.html" %}
-{% block body %}
+{% import "bootstrap/wtf.html" as wtf %}
 
-    <h1>Add book to database:</h1>
+{% block body %}
+<br>
+    <h6 style="color:rgb(23, 140, 207)"> Add Book to database: </h6> 
+    <br>
     <p>
         <div class='form'>
             <form method='POST' action=''>
+                
                 {{ form.hidden_tag() }}
-                <!-- Each field displays its label followed by the input field itself -->
-                {{ form.title.label }} {{ form.title }}
-                <br>
-                {{ form.genre.label }} {{ form.genre }}
-                <br>
-                {{ form.author.label }} {{ form.author }}
-                <br>
-                <!-- form.submit is a button -->
-                {{ form.submit }}
+                {{ wtf.quick_form(form)}}
+
                 <br>
                 {{ message }}
             </form>

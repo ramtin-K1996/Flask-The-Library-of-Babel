@@ -7,8 +7,6 @@ from wtforms import StringField, SubmitField, SelectField
 import itertools
 
 
-
-
 @app.route('/home')
 def home():
     return render_template('home.html')
@@ -48,7 +46,7 @@ def viewing_all():
 
     #there is now a dictionary with the books:authors and a list with the books sorted in order. 
     #going to use both to get a string with books sorted in order followed by author split with\n
-    bookssorted_a_z="sorted by title A-Z \n"
+    bookssorted_a_z=" \n"
     for i in sortedbooks:
         values=plist[i]
         bookssorted_a_z += f'{i}:{values}\n'
@@ -78,12 +76,20 @@ def registerbooks():
 def register():
     message = ""
     form = author_form()
+
     if request.method == 'POST':
         ADDfirst_name= form.first_name.data
         ADDlast_name= form.last_name.data
         ADDnationality=form.nationality.data
+        if ADDfirst_name== None:
+            ADDfirst_name=" "
+        if ADDlast_name== None:
+            ADDlast_name=" "
+        if ADDnationality== None:
+            ADDnationality=" "
         ADDfirst_name=ADDfirst_name.strip() #had to add strip method otherwie same name with spaces was added.
         ADDlast_name=ADDlast_name.strip()
+
         a1 = [author.first_name for author in author.query.all()]
         a2 = [author.last_name for author in author.query.all()]
         a1=[element.lower() for element in a1] ; a1
@@ -128,6 +134,7 @@ def delete():
     message2=''
     form = book_deleteby()
     b1 = [books.title for books in books.query.all()]
+    
     if request.method == 'POST':
         deletetitle=form.bookdft.data
 
