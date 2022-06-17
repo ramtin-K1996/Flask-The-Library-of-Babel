@@ -3,6 +3,69 @@ QaProject
 <h1 align="center">  The Library Of Babel </h1>
 
 
+```diff
++ version 3.0.0
+```
+<h4 align="center">Design, Jenkins, Risk assessment </h4>
+
+![image](https://user-images.githubusercontent.com/104978129/174300216-246d5557-703e-44ef-9116-566a19191f45.png)
+
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+
+```diff
+! version 2.0.0
+```
+
+<h4 align="center">Implementation of bootstrap & unit testing</h4>
+
+
+<br>
+<br>
+<h5> New Design sample - functionality is the same as version 1</h5>
+
+![image](https://user-images.githubusercontent.com/104978129/174298361-06c47299-3427-4c92-a4f4-20851a2c0815.png)
+<br>
+<br>
+<br>
+![image](https://user-images.githubusercontent.com/104978129/174298531-c3021791-e6f3-4e58-9315-9933df8f01fa.png)
+<br>
+<br>
+<br>
+<br>
+
+<h4 align="center"> Unit Testing and Coverage </h4>
+<br>
+
+
+![image](https://user-images.githubusercontent.com/104978129/174298678-ef67b9e4-1493-4877-9dc5-93ffa28faece.png)
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ```diff
 -- version 1.0.0 -- 
