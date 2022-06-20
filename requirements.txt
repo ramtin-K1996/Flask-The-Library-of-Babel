@@ -2,8 +2,8 @@ flask
 flask_sqlalchemy
 pymysql
 flask-wtf 
+pytest-cov
 wtforms
 flask-bootstrap
 flask_testing
 pytest
-pytest-cov
