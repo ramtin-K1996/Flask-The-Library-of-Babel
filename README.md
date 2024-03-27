@@ -8,7 +8,7 @@ QaProject
 ```
 <h4 align="center">Design, Jenkins, Risk assessment </h4>
 
-![image](https://user-images.githubusercontent.com/104978129/174300216-246d5557-703e-44ef-9116-566a19191f45.png)
+![image](https://github.com/ramtin-K1996/Flask-The-Library-of-Babel/blob/main/photos%20&%20diagrams/flaskplain4.png?raw=true)
 (Full description of application interface and functionality is described in version 1)
 <br>
 <br>
@@ -33,8 +33,6 @@ risk assessment carried out at the start of the project and expanded as project 
 <h4>analysis </h4>
 
 In terms of the application it currently operates as the staff side of a book store. From my trello boards below you can see the full scope of the project would have been to also build the customer side. I would have expanded on some design aspects and developed a Login feature that would have only granted access to the staff functionality for valid users. The biggest obstacle in developing the full scope was the time constraints rather than technical. Nonetheless the project in terms of functionality meets the requirements. 
-
-Otherwise the other area which had room for improvement would have been testing. I would have liked to carried out more thorough testing and achieved a higher test coverage. This was more a technical downfall but the time constraints also played a role as some parts of the program I found difficult to test for.
 
 <br>
 <br>
